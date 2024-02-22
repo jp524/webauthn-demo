@@ -1,0 +1,8 @@
+<div>
+  <p><%= pluralize(resource.errors.count, 'error') %> prevented this form from being submitted:</p>
+  <ul>
+    <% resource.errors.each do |error| %>
+      <li><%= error.full_message %></li>
+    <% end %>
+  </ul>
+</div>
