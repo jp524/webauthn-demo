@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [ :new, :create ]
   namespace :sessions do
-    resource :user, only: [ :new, :create ]
+    resource :user, only: [ :new, :create, :destroy ]
   end
 
   resources :static_pages, only: [ :index ]

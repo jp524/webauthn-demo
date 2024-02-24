@@ -10,4 +10,10 @@ class Sessions::UsersController < ApplicationController
       redirect_to new_sessions_user_path, alert: "Login failed. Please verify your username and password."
     end
   end
+
+  def destroy
+    session[:user_id] = nil
+    session[:user_expires_at] = nil
+    redirect_to root_path, notice: "Successfully logged out."
+  end
 end

@@ -1,0 +1,11 @@
+<nav>
+  <p>WebAuthn Demo</p>
+
+  <div>
+    <% if current_user %>
+      <%= button_to "Logout", sessions_user_path, method: :delete, data: { turbo: false } %>
+    <% else %>
+      <%= link_to "Login", new_sessions_user_path %>
+    <% end %>
+  </div>
+</nav>
