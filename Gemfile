@@ -54,6 +54,12 @@ group :development, :test do
   # System tests
   gem "capybara"
   gem "selenium-webdriver"
+
+  # Access to sessions
+  gem "rack_session_access"
+
+  # Clean database between tests
+  gem "database_cleaner-active_record"
 end
 
 group :development do
