@@ -1,0 +1,15 @@
+<h2>User login</h2>
+
+<%= form_with url: sessions_user_path do |f| %>
+  <div>
+    <%= f.text_field :name, required: true, autofocus: true, autocomplete: "username" %>
+    <%= f.label :name %>
+  </div>
+
+  <div>
+    <%= f.password_field :password, required: true, autocomplete: "current-password" %>
+    <%= f.label :password %>
+  </div>
+
+  <%= f.submit "Log in" %>
+<% end %>

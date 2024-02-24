@@ -6,7 +6,12 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  root "users#new"
+  root "sessions/users#new"
 
   resources :users, only: [ :new, :create ]
+  namespace :sessions do
+    resource :user, only: [ :new, :create ]
+  end
+
+  resources :static_pages, only: [ :index ]
 end
