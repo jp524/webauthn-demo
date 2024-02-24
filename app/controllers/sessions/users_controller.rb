@@ -5,7 +5,7 @@ class Sessions::UsersController < ApplicationController
     if (user = User.authenticate_by(name: params[:name], password: params[:password]))
       session[:user_id] = user.id
       session[:user_expires_at] = 1.hour.from_now
-      redirect_to root_path
+      redirect_to static_pages_path, notice: "Successfully logged in."
     else
       redirect_to new_sessions_user_path, alert: "Login failed. Please verify your username and password."
     end
