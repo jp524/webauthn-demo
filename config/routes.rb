@@ -14,4 +14,10 @@ Rails.application.routes.draw do
   end
 
   resources :static_pages, only: [ :index ]
+
+  namespace :webauthn do
+    resources :credentials, only: %i[index create destroy] do
+      post :options, on: :collection, as: "options_for"
+    end
+  end
 end
