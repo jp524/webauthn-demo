@@ -3,14 +3,21 @@ form {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 0.4rem;
+  gap: 0.8rem;
 
   label {
     display: block;
+    margin-bottom: 0.2rem;
   }
 
   input[type=submit], button {
     margin-top: 0.4rem;
     align-self: center;
+  }
+
+  input[type=text], input[type=password] {
+    padding: 0.3rem;
+    border: 0.1rem solid lightgray;
+    border-radius: 0.4rem;
   }
 }
