@@ -1,24 +1,24 @@
-<h2>New User</h2>
+<h2>User sign up</h2>
 
 <%= form_with model: @user do |f| %>
   <%= render 'shared/form_errors', resource: @user if @user.errors.any? %>
 
   <div>
-    <%= f.text_field :name, required: true, autofocus: true %>
     <%= f.label :name %>
+    <%= f.text_field :name, required: true, autofocus: true %>
   </div>
 
   <div>
-    <%= f.password_field :password, required: true %>
     <%= f.label :password %>
+    <%= f.password_field :password, required: true %>
   </div>
 
   <div>
-    <%= f.password_field :password_confirmation, required: true %>
     <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, required: true %>
   </div>
 
-  <%= f.submit "Create account" %>
+  <%= f.submit "Create account", class: "btn btn--primary" %>
 <% end %>
 
 <%= link_to 'Log in', new_sessions_user_path %>

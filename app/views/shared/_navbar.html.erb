@@ -3,9 +3,9 @@
 
   <div class="navbar__links">
     <% if current_user %>
-      <%= button_to "Logout", sessions_user_path, method: :delete, data: { turbo: false } %>
+      <%= button_to "Logout", sessions_user_path, method: :delete, data: { turbo: false }, class: "btn btn--dark" %>
     <% else %>
-      <%= link_to "Login", new_sessions_user_path %>
+      <%= link_to "Login", new_sessions_user_path, class: "btn btn--primary" %>
     <% end %>
   </div>
 </nav>

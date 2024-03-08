@@ -1,0 +1,16 @@
+form {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.4rem;
+
+  label {
+    display: block;
+  }
+
+  input[type=submit] {
+    margin-top: 0.4rem;
+    align-self: center;
+  }
+}

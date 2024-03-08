@@ -2,16 +2,16 @@
 
 <%= form_with url: sessions_user_path do |f| %>
   <div>
-    <%= f.text_field :name, required: true, autofocus: true, autocomplete: "username" %>
     <%= f.label :name %>
+    <%= f.text_field :name, required: true, autofocus: true, autocomplete: "username" %>
   </div>
 
   <div>
-    <%= f.password_field :password, required: true, autocomplete: "current-password" %>
     <%= f.label :password %>
+    <%= f.password_field :password, required: true, autocomplete: "current-password" %>
   </div>
 
-  <%= f.submit "Log in" %>
+  <%= f.submit "Log in", class: "btn btn--primary" %>
 <% end %>
 
 <%= link_to 'Sign up', new_user_path %>

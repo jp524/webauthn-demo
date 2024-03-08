@@ -5,7 +5,10 @@
   padding-left: var(--space-m);
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (max-width: 50rem) {
     width: 100%;
