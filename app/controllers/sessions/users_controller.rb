@@ -1,4 +1,7 @@
 class Sessions::UsersController < ApplicationController
+  before_action :require_user_authentication, only: :destroy
+  before_action :user_not_logged_in, only: %i[new create]
+
   def new;end
 
   def create
@@ -30,5 +33,9 @@ class Sessions::UsersController < ApplicationController
     session[:user_id] = user.id
     session[:user_expires_at] = 1.hour.from_now
     redirect_to static_pages_path, notice: "Successfully logged in."
+  end
+
+  def user_not_logged_in
+    redirect_to static_pages_path if current_user
   end
 end
