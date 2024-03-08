@@ -1,0 +1,19 @@
+// Configuration
+@import "config/variables";
+@import "config/reset";
+@import "config/animations";
+
+// Components
+@import "components/btn";
+@import "components/error_message";
+@import "components/flash";
+@import "components/form";
+@import "components/li";
+@import "components/navbar";
+
+// Layouts
+@import "layouts/container";
+
+// Pages
+@import "pages/static_pages_index";
+@import "pages/webauthn_credentials_index";

@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  max-width: 60rem;
+  padding-right: var(--space-m);
+  padding-left: var(--space-m);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 50rem) {
+    width: 100%;
+    padding-right: var(--space-xs);
+    padding-left: var(--space-xs);
+    font-size: var(--font-size-s);
+  }
+}
