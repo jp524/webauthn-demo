@@ -1,24 +1,24 @@
-# README
+# WebAuthn Demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails application demonstrating login with multi-factor authentication using WebAuthn.
 
-Things you may want to cover:
+The app relies on the `webauthn` gem and the `@github/webauthn-json` package.
 
-* Ruby version
+## Local Installation
 
-* System dependencies
+### Requirements
 
-* Configuration
+* Ruby 3.1.2
+* SQLite
+* Chromedriver (for system tests)
+* Google Chrome (for system tests)
 
-* Database creation
+### Setup
 
-* Database initialization
+1. Download the repository: `git clone https://github.com/jp524/webauthn-demo.git`
+2. Enter the directory: `cd webauthn-demo`
+3. Install gems: `bundle install`
+4. Prepare database: `rails db:create` and `rails db:migrate`
+5. Start the server: `bin/dev`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The application can be viewed at http://localhost:3000.
