@@ -22,3 +22,7 @@ The app relies on the `webauthn` gem and the `@github/webauthn-json` package.
 5. Start the server: `bin/dev`
 
 The application can be viewed at http://localhost:3000.
+
+## Testing
+
+Run the test suite with `bundle exec rspec`.

@@ -5,7 +5,7 @@ RSpec.describe User, '#create', type: :system do
     before_count = described_class.count
 
     visit new_user_path
-    expect(page).to have_content('New User')
+    expect(page).to have_content('User sign up')
 
     fill_in('Name', with: 'admin')
     fill_in('Password', with: 'password')
@@ -21,7 +21,7 @@ RSpec.describe User, '#create', type: :system do
     before_count = described_class.count
 
     visit new_user_path
-    expect(page).to have_content('New User')
+    expect(page).to have_content('User sign up')
 
     fill_in('Name', with: 'admin')
     fill_in('Password', with: 'password')
