@@ -4,6 +4,10 @@ Ruby on Rails application demonstrating login with multi-factor authentication u
 
 The app relies on the `webauthn` gem and the `@github/webauthn-json` package.
 
+## WNB.rb Meetup Talk
+
+[View slides here.](./WebAuthn%20Talk%20Slides.pdf)
+
 ## Local Installation
 
 ### Requirements
