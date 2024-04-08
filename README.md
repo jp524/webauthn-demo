@@ -12,7 +12,7 @@ The app relies on the `webauthn` gem and the `@github/webauthn-json` package.
 
 ### Requirements
 
-* Ruby 3.1.2
+* Ruby 3.3.0
 * SQLite
 * Chromedriver (for system tests)
 * Google Chrome (for system tests)
