@@ -8,6 +8,10 @@ The app relies on the `webauthn` gem and the `@github/webauthn-json` package.
 
 [View slides here.](./WebAuthn%20Talk%20Slides.pdf)
 
+## AustinRB Meetup Talk
+
+[View slides here.](./WebAuthn%20Talk%20AustinRB%20Slides.pdf)
+
 ## Local Installation
 
 ### Requirements
